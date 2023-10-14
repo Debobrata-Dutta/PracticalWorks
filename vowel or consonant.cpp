@@ -1,12 +1,16 @@
+//Write a program in c to check if the character entered by the user is an upper case character or lower case character.
 #include<stdio.h>
-int main(){
-	char alfa;
-	printf("enter the alphabet:");
-	scanf("%c",&alfa);
-	if (alfa=='a'||alfa=='A'||alfa=='e'||alfa=='E'||alfa=='i'||alfa=='I'||alfa=='o'||alfa=='O'||alfa=='u'||alfa=='U'){
-		printf("vowel");
-	}
-else{
-	printf("consonant");
-}
+int main()
+{
+    char ch;
+    int lc,uc;
+    printf("Enter a Character:\n");
+    scanf("%c",&ch);
+    if(ch>='A'&&ch<='Z')
+        printf("The character entered is in uppercase");
+    else if(ch>='a'&&ch=='z')
+        printf("The character entered is in lowercase");
+    else
+        printf("invalid character");
+	return 0;
 }
